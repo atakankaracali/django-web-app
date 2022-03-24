@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-fuid">
+    <div class="container">
+        <h1 class="display-4"><center>Home Page</center></h1>
+        <div class="container">
+            <div class="col-mb-2">
+                <center><img src="static/img/image.jpg"></center>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4"><center>FILM LIST</center></h1>
+        <p class="lead"><center>This project was prepared with Python Django.</center></p>
+        <div class="text-center">
+            <a class="btn btn-outline-success" href="{% url 'movies' %}" role="button">Movies</a>
+        </div>
+        </div>
+    </div>
+<div>
+{% endblock %}
